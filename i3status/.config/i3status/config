@@ -1,0 +1,58 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 5
+        # separator = ""
+}
+
+# order += "ipv6"
+order += "disk /"
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "battery all"
+# order += "load"
+order += "tztime local"
+
+
+disk "/" {
+        format = "%avail free of %total"
+}
+
+wireless _first_ {
+        format_up = "Wifi: %ip (%essid%quality)"
+        format_down = "Wifi down"
+}
+
+ethernet _first_ {
+        # if you use %speed, i3status requires root privileges
+        format_up = "Ethernet: %ip (%speed)"
+        # format_down = "Ethernet down"
+        format_down = ""
+}
+
+battery all {
+        format = "%status - %percentage - %remaining left - %consumption"
+        last_full_capacity = "true"  # true = worn out batteries can still show 100%
+        integer_battery_capacity = "true"  # true = hide decimals from capacity percent
+        hide_seconds = "true"  # true = hide seconds from time remaining
+        status_chr = "Battery charging"
+        status_bat = "Battery depleting"
+        status_unk = "Unknown power"
+        status_full = "Battery full"
+}
+
+load {
+        format = "%1min %5min %15min"
+}
+
+tztime local {
+        format = "%Y-%m-%d %H:%M:%S"
+}
+
