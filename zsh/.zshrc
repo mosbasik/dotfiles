@@ -89,8 +89,6 @@ fi
 
 
 
-eval "$(fasd --init auto)"
-
 # openVPN(){
 #   unset "http_proxy"
 #   unset "HTTP_PROXY"
