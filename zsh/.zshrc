@@ -89,54 +89,6 @@ fi
 
 
 
-prox() {
-
-    proxy_status() {
-        ENV_PATH="$(readlink /etc/environment)"
-        if [ "$ENV_PATH" == "/etc/environment.proxy" ]; then
-            echo "on"
-        elif [ "$ENV_PATH" == "/etc/environment.noproxy" ]; then
-            echo "off"
-        else
-            return 1
-        fi
-        return 0
-    }
-
-    CHANGED=0
-    if [ "$1" == "on" ]; then
-        if [ "$(proxy_status)" == "on" ]; then
-            echo "Proxy is already on."
-        else
-            echo "Enabling proxy..."
-            sudo ln -sf /etc/environment.proxy /etc/environment
-            CHANGED=1
-        fi
-    elif [ "$1" == "off" ]; then
-        if [ "$(proxy_status)" == "off" ]; then
-            echo "Proxy is already off."
-        else
-            echo "Disabling proxy..."
-            sudo ln -sf /etc/environment.noproxy /etc/environment
-            CHANGED=1
-        fi
-    else
-        echo "Proxy is $(proxy_status)."
-    fi
-
-    if [ $CHANGED != 0 ]; then
-        echo "Changes will be applied on your next login."
-        echo -e "Would you like to relog immediately? (y/n): \c"
-        read -r WANT_LOG
-
-        if [ "$WANT_LOG" == "y" ]; then
-            pkill -9 -u "$(whoami)"
-        fi
-    fi
-
-    return 0
-}
-
 # prevent nested ranger instances: if the current shell is a child of a ranger
 # instance and ranger is requested, exit the shell and return to the parent
 # ranger.  if the current shell isn't a child of a ranger instance and ranger is
