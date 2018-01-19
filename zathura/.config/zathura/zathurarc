@@ -1,0 +1,3 @@
+set smooth-scroll true  # smooth scrolling with touchpad (default: false)
+set show-v-scrollbar true  # show vertical scrollbar (default: false)
+set scroll-page-aware true  # scrolling by half or full pages stops at page boundaries (default: false)
