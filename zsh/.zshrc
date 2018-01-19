@@ -89,30 +89,6 @@ fi
 
 
 
-# openVPN(){
-#   unset "http_proxy"
-#   unset "HTTP_PROXY"
-#   unset "https_proxy"
-#   unset "HTTPS_PROXY"
-# 
-#   USERNAME="s173817"
-# 
-#   # sudo echo ""
-# 
-#   # echo -e "Enter UTSW Active Directory password: \c"
-#   # read -s UTSW_PASS
-#   # echo ""
-# 
-#   # echo "Enter Duo two-factor password: \c"
-#   # read -s DUO_PASS
-#   # echo ""
-# 
-#   # sudo openconnect --background --user=${USERNAME} --juniper --proxy="http://proxy.swmed.org:3128" utswra.swmed.edu
-#   sudo openconnect --background --user=${USERNAME} --juniper --no-proxy utswra.swmed.edu
-# 
-#   assignProxy
-# }
-
 prox() {
 
     proxy_status() {
