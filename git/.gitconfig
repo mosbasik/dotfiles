@@ -1,0 +1,10 @@
+[user]
+	name = Peter Henry
+	email = me@peterhenry.net
+[core]
+	eol = lf
+	autocrlf = input
+[push]
+	default = simple
+[merge]
+	renormalize = true
