@@ -59,6 +59,7 @@ plugins=(git history-substring-search colorize colored-man-pages archlinux rust)
 
 # export PATH="/usr/bin:/bin:/usr/sbin:sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+export EDITOR=/usr/bin/nvim
 
 source $ZSH/oh-my-zsh.sh
 
