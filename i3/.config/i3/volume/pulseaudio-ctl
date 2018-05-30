@@ -1,0 +1,4 @@
+# volume button settings for pulseaudio-ctl
+bindsym XF86AudioRaiseVolume exec --no-startup-id /usr/bin/pulseaudio-ctl up
+bindsym XF86AudioLowerVolume exec --no-startup-id /usr/bin/pulseaudio-ctl down
+bindsym XF86AudioMute exec --no-startup-id /usr/bin/pulseaudio-ctl mute
