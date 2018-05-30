@@ -169,7 +169,7 @@ bindsym $mod+m move workspace to output right
 # bindsym $mod+b exec xset dpms force off
 
 # run an xrandr script to set display configuration
-bindsym $mod+b exec --no-startup-id $HOME/.screenlayout/menu.py
+#bindsym $mod+b exec --no-startup-id $HOME/.screenlayout/menu.py
 
 ## Power management
 ## Source: https://wiki.archlinux.org/index.php/i3#Shutdown.2C_reboot.2C_lock_screen

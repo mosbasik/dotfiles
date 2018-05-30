@@ -1,0 +1,17 @@
+# Press $mod+b to see the list of arandr scripts
+set $mode_displays (L)eft, (D)efault
+bindsym $mod+b mode "$mode_displays"
+
+mode "$mode_displays" {
+    # press an option to choose an arandr script to run
+    bindsym d exec --no-startup-id ~/.screenlayout/active/default.sh, mode "default"
+    bindsym l exec --no-startup-id ~/.screenlayout/active/hdmi_left.sh, mode "default"
+
+    # press Enter or Escape to return to the default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+
+    # for debugging only
+    #bindsym t exec i3-nagbar -t warning -m "Successfully entered mode_displays and selected test", mode "default"
+}
+
