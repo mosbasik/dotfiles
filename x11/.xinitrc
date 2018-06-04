@@ -25,5 +25,8 @@
 #xrandr --setprovideroutputsource modesetting NVIDIA-0
 #xrandr --auto
 
+# start the urxvt daemon
+urxvtd --quiet --opendisplay &
+
 # start i3 window manager
 exec i3
