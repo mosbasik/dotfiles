@@ -2,6 +2,7 @@
 
 # source .Xresources if it is present
 # [[ -f ~/.Xresources ]] && xrdb -merge -I"$HOME" ~/.Xresources &  # moved to i3 config
+xrdb -load ~/.Xresources &
 
 # start the dropbox daemon
 # /usr/bin/dropbox &  # replaced with systemd user service
