@@ -1,0 +1,27 @@
+{
+    // Commonly Used
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Fira Code, inconsolata",
+    "editor.tabSize": 4,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "off",
+
+    // Editor
+    "editor.cursorBlinking": "phase",
+    "editor.dragAndDrop": false,
+    "editor.fontLigatures": true,
+    "editor.rulers": [
+        80,
+        88,
+        150,
+    ],
+    "editor.smoothScrolling": true,
+    
+    // Workbench
+    "workbench.colorTheme": "Gruvbox Dark (Hard)",
+
+    // Window
+    "window.menuBarVisibility": "toggle",
+}
