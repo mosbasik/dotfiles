@@ -4,9 +4,6 @@
 # [[ -f ~/.Xresources ]] && xrdb -merge -I"$HOME" ~/.Xresources &  # moved to i3 config
 xrdb -load ~/.Xresources &
 
-# start the dropbox daemon
-# /usr/bin/dropbox &  # replaced with systemd user service
-
 # start auto-mounting media
 # devmon &  # moved to i3 config
 
@@ -25,6 +22,9 @@ xrdb -load ~/.Xresources &
 # enable laptop display (because hdmi is main output)
 #xrandr --setprovideroutputsource modesetting NVIDIA-0
 #xrandr --auto
+
+# start the dropbox daemon
+/usr/bin/dropbox &
 
 # start the urxvt daemon
 urxvtd --quiet --opendisplay &
