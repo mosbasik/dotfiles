@@ -16,9 +16,6 @@ xrdb -load ~/.Xresources &
 # start screensaver process in background
 # xscreensaver -no-splash &  # moved to i3 config
 
-# start networkmanager tray applet
-# nm-applet &  # moved to i3 config
-
 # enable laptop display (because hdmi is main output)
 #xrandr --setprovideroutputsource modesetting NVIDIA-0
 #xrandr --auto
@@ -28,6 +25,9 @@ xrdb -load ~/.Xresources &
 
 # start the urxvt daemon
 urxvtd --quiet --opendisplay &
+
+# start networkmanager tray applet
+nm-applet &
 
 # start i3 window manager
 exec i3
