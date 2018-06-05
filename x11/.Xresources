@@ -13,22 +13,6 @@ URxvt*font: xft:Inconsolata:pixelsize=15
 
 URxvt*urgentOnBell: true
 
-! ------------------------------------------------------------------------------
-! ROFI Color theme
-! Copyright: 2017 leofa
-! "Arc-Dark" from https://github.com/DaveDavenport/rofi-themes
-! ------------------------------------------------------------------------------
-! "Color scheme for normal row" Set from: File
-rofi.color-normal:                   argb:00383c4a, #c4cbd4, argb:96404552, #4084d6, #f9f9f9
-! "Color scheme for urgent row" Set from: File
-rofi.color-urgent:                   argb:002d303b, #cc6666, argb:e52d303b, #a54242, #f9f9f9
-! "Color scheme for active row" Set from: File
-rofi.color-active:                   argb:002d303b, #b5bd68, argb:e42d303b, #8c9440, #f9f9f9
-! "Color scheme window" Set from: File
-rofi.color-window:                   argb:f22d303b, #7c8389, #1d1f21
-! "Separator style (none, dash, solid)" Set from: XResources
-rofi.separator-style:                solid
-
 
 ! Base16 Gruvbox dark, hard
 ! Scheme: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
