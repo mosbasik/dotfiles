@@ -1,11 +1,12 @@
 # Press $mod+b to see the list of arandr scripts
-set $mode_displays (L)eft, (D)efault
+set $mode_displays (L)eft, (D)efault, (R)ight
 bindsym $mod+b mode "$mode_displays"
 
 mode "$mode_displays" {
     # press an option to choose an arandr script to run
     bindsym d exec --no-startup-id ~/.screenlayout/active/default.sh, mode "default"
     bindsym l exec --no-startup-id ~/.screenlayout/active/hdmi_left.sh, mode "default"
+    bindsym r exec --no-startup-id ~/.screenlayout/active/hdmi_right.sh, mode "default"
 
     # press Enter or Escape to return to the default mode
     bindsym Return mode "default"
