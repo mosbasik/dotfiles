@@ -30,6 +30,12 @@
     // Prettier configuration
     "prettier.tabWidth": 4,
 
+    // Rust configuration
+    "rust-client.channel": "stable",
+    "rust.jobs": 4,
+    "rust.show_warnings": true,
+    "rust.racer_completion": true,
+    "rust.wait_to_build": 1500,
 
     // Workbench
     "workbench.colorTheme": "Gruvbox Dark (Hard)",
