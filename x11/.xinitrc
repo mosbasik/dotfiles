@@ -20,6 +20,12 @@ xrdb -load ~/.Xresources &
 #xrandr --setprovideroutputsource modesetting NVIDIA-0
 #xrandr --auto
 
+# make DISPLAY available to systemd user services
+systemctl --user import-environment DISPLAY
+
+# start fluidspaces daemon
+systemctl --user start fluidspaces.service
+
 # start the dropbox daemon
 /usr/bin/dropbox &
 

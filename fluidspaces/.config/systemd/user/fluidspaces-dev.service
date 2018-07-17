@@ -1,0 +1,14 @@
+[Unit]
+Description=Create and navigate named i3 workspaces (dev version)
+StartLimitBurst=5
+StartLimitIntervalSec=10
+Conflicts=fluidspaces.service
+
+[Service]
+Restart=always
+RestartSec=1
+Environment=RUST_BACKTRACE=1
+ExecStart=/home/phenry/Dropbox/Development/fluidspaces-rs/target/debug/fluidspaces
+
+[Install]
+WantedBy=multi-user.target
