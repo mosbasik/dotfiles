@@ -30,6 +30,13 @@
     // Prettier configuration
     "prettier.tabWidth": 4,
 
+    // Python configuration
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.flake8Args": ["--max-line-length=88"],
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+
     // Rust configuration
     "rust-client.channel": "stable",
     "rust.jobs": 4,
