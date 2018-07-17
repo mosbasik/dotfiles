@@ -26,6 +26,9 @@ systemctl --user import-environment DISPLAY
 # start fluidspaces daemon
 systemctl --user start fluidspaces.service
 
+# start sxhkd daemon
+systemctl --user start sxhkd.service
+
 # start the dropbox daemon
 /usr/bin/dropbox &
 
