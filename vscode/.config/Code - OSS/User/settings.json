@@ -45,7 +45,7 @@
     "rust.wait_to_build": 1500,
 
     // Workbench
-    "workbench.colorTheme": "Gruvbox Dark (Hard)",
+    "workbench.colorTheme": "Monokai",
 
     // Window
     "window.menuBarVisibility": "toggle",
