@@ -12,11 +12,9 @@
     "editor.cursorBlinking": "phase",
     "editor.dragAndDrop": false,
     "editor.fontLigatures": true,
-    "editor.rulers": [
-        80,
-        88,
-        150,
-    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80, 88, 150],
     "editor.smoothScrolling": true,
     
     // Workbench
