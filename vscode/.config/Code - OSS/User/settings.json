@@ -16,7 +16,15 @@
     "editor.formatOnType": true,
     "editor.rulers": [80, 88, 150],
     "editor.smoothScrolling": true,
-    
+
+    // Files
+    "files.associations": {
+        "**/.i3/config": "i3",
+        "**/i3/config": "i3",
+        "sxhkdrc": "sxhkdrc"
+    },
+
+
     // Workbench
     "workbench.colorTheme": "Gruvbox Dark (Hard)",
 
