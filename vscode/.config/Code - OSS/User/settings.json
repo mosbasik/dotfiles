@@ -12,13 +12,38 @@
     "editor.cursorBlinking": "phase",
     "editor.dragAndDrop": false,
     "editor.fontLigatures": true,
-    "editor.rulers": [
-        80,
-        88,
-        150,
-    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80, 88, 150],
     "editor.smoothScrolling": true,
-    
+
+    // Files
+    "files.associations": {
+        "**/.i3/config": "i3",
+        "**/i3/config": "i3",
+        "sxhkdrc": "sxhkdrc"
+    },
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    // Prettier configuration
+    "prettier.tabWidth": 4,
+
+    // Python configuration
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.flake8Args": ["--max-line-length=88"],
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+
+    // Rust configuration
+    "rust-client.channel": "stable",
+    "rust.jobs": 4,
+    "rust.show_warnings": true,
+    "rust.racer_completion": true,
+    "rust.wait_to_build": 1500,
+
     // Workbench
     "workbench.colorTheme": "Gruvbox Dark (Hard)",
 
