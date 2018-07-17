@@ -27,6 +27,9 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
 
+    // Prettier configuration
+    "prettier.tabWidth": 4,
+
 
     // Workbench
     "workbench.colorTheme": "Gruvbox Dark (Hard)",
