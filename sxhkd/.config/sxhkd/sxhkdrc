@@ -1,0 +1,92 @@
+#
+# Application Management
+#
+
+alt + Return
+    urxvtc
+
+alt + p
+    rofi -show drun
+
+alt + shift + q
+    i3-msg 'kill'
+
+
+#
+# Window Managment
+#
+
+# change which container is focused
+alt + Left
+    i3-msg 'focus left'
+alt + Down
+    i3-msg 'focus down'
+alt + Right
+    i3-msg 'focus right'
+alt + Up
+    i3-msg 'focus up'
+
+# move focused container around
+alt + shift + Left
+    i3-msg 'move left'
+alt + shift + Down
+    i3-msg 'move down'
+alt + shift + Right
+    i3-msg 'move right'
+alt + shift + Up
+    i3-msg 'move up'
+
+# change focused container's split direction
+alt + h
+    i3-msg 'split h'
+alt + v
+    i3-msg 'split v'
+
+# change focused container's layout method
+alt + s
+    i3-msg 'layout stacking'
+alt + w
+    i3-msg 'layout tabbed'
+alt + e
+    i3-msg 'layout toggle split'
+
+# toggle focused container between tiling/fullscreen
+alt + f
+    i3-msg 'fullscreen toggle'
+
+# toggle focused container between tiling/floating
+alt + shift + space
+    i3-msg 'floating toggle'
+
+# change focus between tiling/floating windows
+alt + space
+    i3-msg 'focus mode_toggle'
+
+# focus the parent container
+alt + a
+    i3-msg 'focus parent'
+
+
+#
+# Service Management
+#
+
+# exit services
+alt + shift + e ; i
+    i3-nagbar -t warning -m 'Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'
+alt + shift + e ; f
+    i3-nagbar -t warning -m 'Do you really want to exit fluidspaces? Workspace navigation will no longer work.' -b 'Yes, exit fluidspaces' 'systemctl --user stop fluidspaces'
+alt + shift + e ; s
+    i3-nagbar -t warning -m 'Do you really want to exit sxhkd? Keyboard shortcuts will no longer work.' -b 'Yes, exit sxkhd' 'systemctl --user stop sxhkd'
+
+# restart services
+alt + shift + r ; i
+    ~/.config/i3/buildconfig.sh && i3-msg restart
+alt + shift + r ; f
+    systemctl --user restart fluidspaces.service
+alt + shift + r ; s
+    systemctl --user restart sxhkd.service
+
+# reload services
+alt + shift + w ; i
+    ~/.config/i3/buildconfig.sh && i3-msg reload
