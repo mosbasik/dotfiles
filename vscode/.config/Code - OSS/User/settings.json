@@ -10,7 +10,6 @@
 
     // Editor
     "editor.cursorBlinking": "phase",
-    "editor.dragAndDrop": false,
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
