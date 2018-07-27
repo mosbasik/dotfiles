@@ -36,6 +36,7 @@
     "python.linting.flake8Args": ["--max-line-length=88"],
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
+    "python.venvPath": "~/.virtualenvs",
 
     // Rust configuration
     "rust-client.channel": "stable",
@@ -48,5 +49,5 @@
     "workbench.colorTheme": "Monokai",
 
     // Window
-    "window.menuBarVisibility": "toggle",
+    "window.menuBarVisibility": "toggle"
 }
