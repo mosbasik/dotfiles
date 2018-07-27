@@ -2,19 +2,31 @@
 # Application Management
 #
 
+# launch terminal
+# other options:
+#   i3-sensible-terminal - some common terminal names
+#   urxvt - old faithful
+#   urxvtc - urxvt in daemon/client mode
+#   alacritty - gpu accelerated
+#   qterminal - renders font ligatures
 alt + Return
     urxvtc
 
+# launch programs
+# other options:
+#   dmenu_run
+#   i3-dmenu-desktop
 alt + p
     rofi -show drun
-
-alt + shift + q
-    i3-msg 'kill'
 
 
 #
 # Window Managment
 #
+
+# kill focused container
+alt + shift + q
+    i3-msg 'kill'
 
 # change which container is focused
 alt + Left
@@ -90,3 +102,32 @@ alt + shift + r ; s
 # reload services
 alt + shift + w ; i
     ~/.config/i3/buildconfig.sh && i3-msg reload
+
+
+#
+# Workspace Management
+#
+
+# rename workspace
+alt + n
+    i3-input -F 'rename workspace to "%s"' -P 'New name for this workspace: '
+
+# go to workspace with name
+alt + c
+    /home/phenry/fluidspaces-msg --action go_to
+
+# send focused container to workspace with name
+alt + shift + c
+    /home/phenry/fluidspaces-msg --action send_to
+
+# bring focused container to workspace with name
+alt + ctrl + shift + c
+    /home/phenry/fluidspaces-msg --action bring_to
+
+# toggle to most recently used workspace
+alt + Tab
+    /home/phenry/fluidspaces-msg --action toggle
+
+# toggle which monitor active workspace appears on
+alt + m
+    i3-msg 'move workspace to output right'
