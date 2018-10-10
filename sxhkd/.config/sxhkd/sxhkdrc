@@ -131,3 +131,14 @@ alt + Tab
 # toggle which monitor active workspace appears on
 alt + m
     i3-msg 'move workspace to output right'
+
+
+#
+# Hardware Management
+#
+
+# change backlight brightness
+XF86MonBrightnessUp
+    pkexec brillo -q -u 1500 -A 5
+XF86MonBrightnessDown
+    pkexec brillo -q -u 1500 -U 5
