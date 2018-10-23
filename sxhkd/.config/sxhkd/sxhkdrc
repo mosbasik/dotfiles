@@ -102,6 +102,8 @@ alt + shift + r ; s
 # reload services
 alt + shift + w ; i
     ~/.config/i3/buildconfig.sh && i3-msg reload
+alt + shift + w ; s
+    killall -s SIGUSR1 sxhkd
 
 
 #
