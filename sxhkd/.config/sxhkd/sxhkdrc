@@ -19,6 +19,25 @@ alt + Return
 alt + p
     rofi -show drun
 
+# capture region of screen (hide cursor, save to file and clipboard)
+Print
+    mkdir -p ~/Screenshots && \
+    maim --hidecursor --select | \
+    tee ~/Screenshots/$(date +%Y-%m-%dT%H-%M-%S)-maim-region.png | \
+    xclip -selection clipboard -t image/png
+# capture whole screen (don't hide cursor, save to file and clipboard)
+shift + Print
+    mkdir -p ~/Screenshots && \
+    maim | \
+    tee ~/Screenshots/$(date +%Y-%m-%dT%H-%M-%S)-maim-screen.png | \
+    xclip -selection clipboard -t image/png
+# capture window (hide cursor, save to file and clipboard)
+ctrl + Print
+    mkdir -p ~/Screenshots && \
+    maim --hidecursor --window=$(xdotool selectwindow) | \
+    tee ~/Screenshots/$(date +%Y-%m-%dT%H-%M-%S)-maim-window.png | \
+    xclip -selection clipboard -t image/png
+
 
 #
 # Window Managment
