@@ -1,6 +1,7 @@
 # Basic bar configuration using the Base16 variables.
 bar {
     status_command i3status
+    strip_workspace_numbers yes
 
     colors {
         background $base00
