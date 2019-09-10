@@ -1,4 +1,8 @@
 {
+    // Autoscrolldown Extension
+    "autoscrolldown.allFiles": true,
+    "autoscrolldown.onlyWhenAtEnd": true,
+
     // Commonly Used
     "files.autoSave": "onFocusChange",
     "editor.fontSize": 14,
