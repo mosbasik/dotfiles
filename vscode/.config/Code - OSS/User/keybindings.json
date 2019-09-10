@@ -4,5 +4,10 @@
     {
         "key": "ctrl+shift+down",
         "command": "editor.action.moveLinesDownAction"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus"
     }
 ]
