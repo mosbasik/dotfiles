@@ -10,7 +10,7 @@
 #   alacritty - gpu accelerated
 #   qterminal - renders font ligatures
 alt + Return
-    urxvtc
+    urxvtc -depth 32 -bg rgba:0000/0000/0000/aaaa
 
 # launch programs
 # other options:
