@@ -1,0 +1,45 @@
+[
+    {
+        "keys": ["super+up"],
+        "command": "move_commit",
+        "args": {
+            "commit": "$commit",
+            "down": false
+        }
+    },
+    {
+        "keys": ["super+down"],
+        "command": "move_commit",
+        "args": {
+            "commit": "$commit",
+            "down": true
+        }
+    },
+    {
+        "keys": ["super+alt+right"],
+        "command": "edit_commit_contents",
+        "args": {
+            "commit": "$commit"
+        }
+    },
+    {
+        "keys": ["super+right"],
+        "command": "edit_commit"
+    },
+    {
+        "keys": ["super+alt+down"],
+        "command": "squash_commit"
+    },
+    {
+        "keys": ["super+backspace"],
+        "command": "drop_commits"
+    },
+    {
+        "keys": ["super+s"],
+        "command": "squash_commits"
+    },
+    {
+        "keys": ["super+f"],
+        "command": "fixup_commits"
+    }
+]
