@@ -3,6 +3,17 @@
     "autoscrolldown.allFiles": true,
     "autoscrolldown.onlyWhenAtEnd": true,
 
+    // Bracket Pair Colorizer 2 Extension
+    "bracket-pair-colorizer-2.colors": [
+        "Gold",
+        "Orchid",
+        "LightSkyBlue",
+        "SpringGreen",
+        "Coral",
+        "MediumSlateBlue",
+        "Sienna"
+    ],
+
     // Commonly Used
     "files.autoSave": "onFocusChange",
     "editor.fontSize": 14,
