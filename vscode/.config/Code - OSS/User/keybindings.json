@@ -1,5 +1,8 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     { "key": "ctrl+shift+up", "command": "editor.action.moveLinesUpAction" },
-    { "key": "ctrl+shift+down", "command": "editor.action.moveLinesDownAction" }
+    {
+        "key": "ctrl+shift+down",
+        "command": "editor.action.moveLinesDownAction"
+    }
 ]

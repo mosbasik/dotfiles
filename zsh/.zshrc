@@ -88,8 +88,6 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-
 # prevent nested ranger instances: if the current shell is a child of a ranger
 # instance and ranger is requested, exit the shell and return to the parent
 # ranger.  if the current shell isn't a child of a ranger instance and ranger is

@@ -15,4 +15,3 @@ mode "$mode_displays" {
     # for debugging only
     #bindsym t exec i3-nagbar -t warning -m "Successfully entered mode_displays and selected test", mode "default"
 }
-
