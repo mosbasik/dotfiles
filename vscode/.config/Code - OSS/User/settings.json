@@ -59,6 +59,10 @@
     "rust.racer_completion": true,
     "rust.wait_to_build": 1500,
 
+    // TODO Highlight Extension
+    "todohighlight.isEnable": true,
+    "todohighlight.keywords": ["TODO", "FIXME", "DEBUG"],
+
     // Workbench
     "workbench.colorTheme": "Monokai",
 
