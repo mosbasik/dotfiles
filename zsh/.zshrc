@@ -103,6 +103,9 @@ ranger() {
 # read that this was a good idea somewhere once
 alias sudo='sudo '
 
+# enable moving the mouse while using the keyboard
+alias fixmouse='xinput set-prop "AlpsPS/2 ALPS GlidePoint" 306 0'
+
 # activate rbenv
 eval "$(rbenv init -)"
 
