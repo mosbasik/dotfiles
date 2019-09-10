@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# source xprofile files if they are present
+[[ -f /etc/xprofile ]] && . /etc/xprofile
+[[ -f ~/.xprofile ]] && . ~/.xprofile
+
 # source .Xresources if it is present
 # [[ -f ~/.Xresources ]] && xrdb -merge -I"$HOME" ~/.Xresources &  # moved to i3 config
 xrdb -load ~/.Xresources &
