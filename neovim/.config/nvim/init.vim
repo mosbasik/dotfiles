@@ -13,3 +13,8 @@ Plug 'neovim/node-host'
 call plug#end()
 
 filetype plugin on
+
+set rnu
+set nu
+set nowrap
+set mouse=a
