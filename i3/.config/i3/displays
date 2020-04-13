@@ -1,5 +1,5 @@
 # Press $mod+b to see the list of arandr scripts
-set $mode_displays (D)efault, (L)eft, (R)ight, l(U)min
+set $mode_displays (D)efault, (L)eft, (R)ight, l(U)min, Mirror(i), Mirror(p)
 bindsym $mod+b mode "$mode_displays"
 
 mode "$mode_displays" {
@@ -8,6 +8,8 @@ mode "$mode_displays" {
     bindsym l exec --no-startup-id ~/.screenlayout/active/hdmi_left.sh, mode "default"
     bindsym r exec --no-startup-id ~/.screenlayout/active/hdmi_right.sh, mode "default"
     bindsym u exec --no-startup-id ~/.screenlayout/active/lumin.sh, mode "default"
+    bindsym i exec --no-startup-id ~/.screenlayout/active/mirror_1080i.sh, mode "default"
+    bindsym p exec --no-startup-id ~/.screenlayout/active/mirror_1080p.sh, mode "default"
 
     # press Enter or Escape to return to the default mode
     bindsym Return mode "default"
