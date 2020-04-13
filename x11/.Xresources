@@ -9,7 +9,7 @@ URxvt*scrollBar_floating: false
 URxvt*scrollstyle: plain
 URxvt*secondaryScroll: true
 
-URxvt*font: xft:Inconsolata:pixelsize=15
+! URxvt*font: xft:Fira Mono:pixelsize=13
 
 URxvt*urgentOnBell: true
 
