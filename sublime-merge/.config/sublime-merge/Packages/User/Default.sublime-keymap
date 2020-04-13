@@ -41,5 +41,36 @@
     {
         "keys": ["super+f"],
         "command": "fixup_commits"
+    },
+    {
+        "keys": [
+            "super+w"
+        ],
+        "command": "git",
+        "args": {
+            "argv": [
+                "gwip"
+            ]
+        }
+    },
+    {
+        "keys": [
+            "super+u"
+        ],
+        "command": "git",
+        "args": {
+            "argv": [
+                "gunwip"
+            ]
+        }
+    },
+    {
+        "keys": [
+            "super+0"
+        ],
+        "command": "show_all_refs",
+        "args": {
+            "ref": "$ref"
+        }
     }
 ]
