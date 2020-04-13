@@ -1,5 +1,5 @@
 # Press $mod+b to see the list of arandr scripts
-set $mode_displays (L)eft, (D)efault, (R)ight, l(U)min
+set $mode_displays (D)efault, (L)eft, (R)ight, l(U)min
 bindsym $mod+b mode "$mode_displays"
 
 mode "$mode_displays" {
