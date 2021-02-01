@@ -13,3 +13,5 @@
 [alias]
 	gwip   = "!f() { git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m '--wip-- [skip ci]'; }; f"
 	gunwip = "!f() { git log -n 1 | grep -q -c -- '--wip--' && git reset HEAD~1; }; f"
+[pull]
+	ff = only
