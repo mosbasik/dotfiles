@@ -106,6 +106,13 @@ alias sudo='sudo '
 # enable moving the mouse while using the keyboard
 alias fixmouse='xinput set-prop "AlpsPS/2 ALPS GlidePoint" 309 0'
 
+# Lumin: generate new branch name with next available number
+newname() {
+    # NEWNAME=$(git branch | grep 'dev-peter-' | sort | tail -n 1 | awk -F- '{printf "dev-peter-%03d-%s-001\n", int($3)+1, branchname}' branchname=$@)
+    NEWNAME=$(git branch -a | grep 'dev-peter-' | awk -F- '{print int($3)+1}' | sort -n | tail -n 1 | awk '{printf "dev-peter-%03d-%s-001", $1, newname}' newname=$@)
+    echo $NEWNAME
+}
+
 # Lumin QOL functions
 alias tb="workon lumin3 && cd lumin-bot"
 alias tbg="workon lumin3 && cd lumin-bot && smerge ."
