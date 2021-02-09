@@ -116,6 +116,24 @@ alias tmg="workon lumin3 && cd lumin-mettel-fci && smerge . && git gui &"
 alias tn="workon lumin3 && cd lumin-nlp"
 alias tng="workon lumin3 && cd lumin-nlp && smerge . && git gui &"
 
+macpush () {
+  LINUX_OUT='/home/phenry/lumin/lumin-bot/out-logic'
+  MAC_OUT='/Users/phenry/lumin/lumin-bot/out-logic'
+  ssh macbook "umount ${MAC_OUT}"
+  rsync -avzz ~/lumin/ macbook:~/lumin/
+  ssh macbook "mkdir -p ${MAC_OUT} && sshfs simone:${LINUX_OUT}/ ${MAC_OUT} -oauto_cache,reconnect,defer_permissions,noappledouble,negative_vncache,volname=myVolName"
+}
+
+LUMIN_PROJECT_LINUX='/home/phenry/lumin'
+LUMIN_PROJECT_MAC='/Users/phenry/lumin'
+maclink () {
+  ssh macbook "mkdir -p ${LUMIN_PROJECT_MAC} && sshfs simone:${LUMIN_PROJECT_LINUX}/ ${LUMIN_PROJECT_MAC} -oauto_cache,reconnect,defer_permissions,noappledouble,negative_vncache,volname=myVolName"
+}
+macunlink () {
+  # ssh macbook "umount ${LUMIN_PROJECT_MAC}"
+  ssh macbook "diskutil umount ${LUMIN_PROJECT_MAC}"
+}
+
 # activate rbenv
 eval "$(rbenv init -)"
 
