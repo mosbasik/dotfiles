@@ -1,3 +1,5 @@
 {
-    "diff_style": "auto"
+    "diff_style": "auto",
+    "draw_white_space": "selection",
+    "word_wrap": "auto",
 }
