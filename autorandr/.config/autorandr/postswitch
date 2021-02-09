@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# fix wallpaper
+wal -i ~/guy-martin-michael-dunlop-duel-200mph.jpg --saturate .7  # re-fit the wallpaper
+i3-msg restart                                                    # re-fit i3bar
+systemctl --user restart fluidspaces.service                      # find i3's new messaging socket
