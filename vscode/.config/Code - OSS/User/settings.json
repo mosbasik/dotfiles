@@ -15,19 +15,22 @@
     ],
 
     // Commonly Used
-    "files.autoSave": "onFocusChange",
-    "editor.fontSize": 14,
+    "editor.dragAndDrop": false,
     "editor.fontFamily": "Fira Code, inconsolata",
-    "editor.tabSize": 4,
-    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.fontSize": 14,
     "editor.insertSpaces": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.tabSize": 4,
     "editor.wordWrap": "off",
+    "files.autoSave": "onFocusChange",
 
     // Editor
     "editor.cursorBlinking": "phase",
     "editor.fontLigatures": true,
-    "editor.formatOnSave": true,
     "editor.formatOnType": true,
+    "editor.minimap.enabled": true,
+    "editor.minimap.showSlider": "always",
+    "editor.renderWhitespace": "none",
     "editor.rulers": [80, 88, 150],
     "editor.smoothScrolling": true,
 
@@ -48,8 +51,6 @@
     "python.formatting.provider": "black",
     "python.linting.enabled": true,
     "python.linting.flake8Args": ["--max-line-length=88", "--ignore=E203,W503"],
-    "python.linting.flake8Enabled": true,
-    "python.linting.mypyEnabled": true,
     "python.venvPath": "~/.virtualenvs",
 
     // Rust configuration
@@ -67,5 +68,41 @@
     "workbench.colorTheme": "Monokai",
 
     // Window
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 0,
+
+    // Misc
+    "breadcrumbs.enabled": true,
+    "gitblame.ignoreWhitespace": true,
+    "search.smartCase": true,
+
+    // [Markdown]
+    "[markdown]": {
+        "editor.rulers": [100],
+        "editor.renderWhitespace": "boundary",
+        "editor.wordWrapColumn": 100,
+        "editor.wordWrap": "bounded",
+        "files.trimTrailingWhitespace": false
+    },
+    // [YAML]
+    "[yaml]": {
+        "rewrap.wrappingColumn": 80
+    },
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    "gitlens.blame.toggleMode": "window",
+    "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.heatmap.toggleMode": "window",
+    "gitlens.recentChanges.toggleMode": "window",
+    "gitlens.statusBar.reduceFlicker": true,
+    "gitlens.views.repositories.enabled": false,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "codesnap.showWindowControls": false,
 }
