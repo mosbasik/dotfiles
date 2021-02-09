@@ -8,8 +8,12 @@ URxvt*scrollBar_right: true
 URxvt*scrollBar_floating: false
 URxvt*scrollstyle: plain
 URxvt*secondaryScroll: true
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+URxvt*saveLines: 10000
 
-! URxvt*font: xft:Fira Mono:pixelsize=13
+URxvt*font: xft:Fira Mono:pixelsize=13
 
 URxvt*urgentOnBell: true
 
