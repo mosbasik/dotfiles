@@ -106,6 +106,16 @@ alias sudo='sudo '
 # enable moving the mouse while using the keyboard
 alias fixmouse='xinput set-prop "AlpsPS/2 ALPS GlidePoint" 309 0'
 
+# Lumin QOL functions
+alias tb="workon lumin3 && cd lumin-bot"
+alias tbg="workon lumin3 && cd lumin-bot && smerge ."
+alias th="workon lumin3 && cd lumin-hostdescs"
+alias thg="workon lumin3 && cd lumin-hostdescs && smerge ."
+alias tm="workon lumin3 && cd lumin-mettel-fci"
+alias tmg="workon lumin3 && cd lumin-mettel-fci && smerge . && git gui &"
+alias tn="workon lumin3 && cd lumin-nlp"
+alias tng="workon lumin3 && cd lumin-nlp && smerge . && git gui &"
+
 # activate rbenv
 eval "$(rbenv init -)"
 
