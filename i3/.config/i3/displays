@@ -7,7 +7,7 @@ mode "$mode_displays" {
     bindsym d exec --no-startup-id ~/.screenlayout/active/default.sh, mode "default"
     bindsym l exec --no-startup-id ~/.screenlayout/active/hdmi_left.sh, mode "default"
     bindsym r exec --no-startup-id ~/.screenlayout/active/hdmi_right.sh, mode "default"
-    bindsym u exec --no-startup-id ~/.screenlayout/active/lumin.sh, mode "default"
+    bindsym u exec --no-startup-id ~/.screenlayout/active/lumin_dell_lg.sh, mode "default"
     bindsym i exec --no-startup-id ~/.screenlayout/active/mirror_1080i.sh, mode "default"
     bindsym p exec --no-startup-id ~/.screenlayout/active/mirror_1080p.sh, mode "default"
 
