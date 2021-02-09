@@ -113,4 +113,4 @@ mode "$mode_system" {
 
 # bindsym XF86MonBrightnessDown mode "$mode_system"
 bindsym $mod+Super_L mode "$mode_system"
-bindsym $mod+l exec --no-startup-id $Locker
+# bindsym $mod+l exec --no-startup-id $Locker

@@ -171,3 +171,11 @@ XF86MonBrightnessUp
     pkexec brillo -q -u 1500 -A 5
 XF86MonBrightnessDown
     pkexec brillo -q -u 1500 -U 5
+
+#
+# Power Management
+#
+
+# lock the screen
+alt + l
+    i3lock-wrapper
