@@ -151,6 +151,9 @@ export PATH=$HOME/.cargo/bin:$PATH
 # add ngrok stuff to path
 export PATH=$HOME/.ngrok2:$PATH
 
+# add yarn stuff to path
+export PATH=$(yarn global bin):$PATH
+
 # function to start ncmpcpp with stuff needed by the visualizer
 nplayer () (nc -kluw 1 127.0.0.1 5555 > /tmp/mpd.fifo & trap "kill $!" EXIT; ncmpcpp)
 
