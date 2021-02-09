@@ -136,18 +136,26 @@ alt + n
 # go to workspace with name
 alt + c
     fluidspaces-msg --action go_to
+alt + d ; alt + c
+    ~/Dropbox/Development/fluidspaces-rs/target/debug/fluidspaces-msg --action go_to
 
 # send focused container to workspace with name
 alt + shift + c
     fluidspaces-msg --action send_to
+alt + d ; alt + shift + c
+    ~/Dropbox/Development/fluidspaces-rs/target/debug/fluidspaces-msg --action send_to
 
 # bring focused container to workspace with name
 alt + ctrl + shift + c
     fluidspaces-msg --action bring_to
+alt + d ; alt + ctrl + shift + c
+    ~/Dropbox/Development/fluidspaces-rs/target/debug/fluidspaces-msg --action bring_to
 
 # toggle to most recently used workspace
 alt + Tab
     fluidspaces-msg --action toggle
+alt + d ; alt + Tab
+    ~/Dropbox/Development/fluidspaces-rs/target/debug/fluidspaces-msg --action toggle
 
 # toggle which monitor active workspace appears on
 alt + m
