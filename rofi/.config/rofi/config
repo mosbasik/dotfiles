@@ -1,1 +1,4 @@
-rofi.theme: /usr/share/rofi/themes/gruvbox-dark-hard.rasi
+#rofi.theme: /usr/share/rofi/themes/gruvbox-dark-hard.rasi
+#rofi.theme: ~/.config/rofi/colors-rofi-dark.rasi
+#rofi.theme: ~/.config/rofi/colors-rofi-dark.rasi
+rofi.theme: ~/.config/rofi/guy-martin.rasi
