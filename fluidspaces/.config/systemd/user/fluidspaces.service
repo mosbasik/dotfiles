@@ -7,7 +7,7 @@ Conflicts=fluidspaces-dev.service
 [Service]
 Restart=always
 RestartSec=1
-ExecStart=/home/phenry/fluidspaces
+ExecStart=/usr/bin/fluidspaces
 
 [Install]
 WantedBy=multi-user.target
