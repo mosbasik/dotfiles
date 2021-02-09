@@ -135,19 +135,19 @@ alt + n
 
 # go to workspace with name
 alt + c
-    /home/phenry/fluidspaces-msg --action go_to
+    fluidspaces-msg --action go_to
 
 # send focused container to workspace with name
 alt + shift + c
-    /home/phenry/fluidspaces-msg --action send_to
+    fluidspaces-msg --action send_to
 
 # bring focused container to workspace with name
 alt + ctrl + shift + c
-    /home/phenry/fluidspaces-msg --action bring_to
+    fluidspaces-msg --action bring_to
 
 # toggle to most recently used workspace
 alt + Tab
-    /home/phenry/fluidspaces-msg --action toggle
+    fluidspaces-msg --action toggle
 
 # toggle which monitor active workspace appears on
 alt + m
