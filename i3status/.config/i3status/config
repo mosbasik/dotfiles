@@ -22,7 +22,11 @@ order += "tztime local"
 
 
 disk "/" {
-        format = "%avail free of %total"
+        # format = "%avail free of %total"
+        format = "%avail free"
+        prefix_type = "binary"
+        threshold_type = "gbytes_avail"
+        low_threshold = 1
 }
 
 wireless _first_ {
