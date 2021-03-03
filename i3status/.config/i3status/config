@@ -42,10 +42,10 @@ battery all {
         last_full_capacity = "true"  # true = worn out batteries can still show 100%
         integer_battery_capacity = "true"  # true = hide decimals from capacity percent
         hide_seconds = "true"  # true = hide seconds from time remaining
-        status_chr = "Battery charging"
-        status_bat = "Battery depleting"
+        status_chr = "Charging"
+        status_bat = "Depleting"
         status_unk = "Unknown power"
-        status_full = "Battery full"
+        status_full = "Charged"
 }
 
 load {
