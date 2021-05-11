@@ -412,3 +412,11 @@
 #    set_stack_tag = "volume"
 #
 # vim: ft=cfg
+
+[lumin-complete]
+    appname = notify-send
+    summary = "Tests complete"
+    background = "#FFFFFF" # white
+    foreground = "#008EFF" # Lumin blue
+    new_icon = "/home/phenry/.config/dunst/lumin-logo.png"
+
