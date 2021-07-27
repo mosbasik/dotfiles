@@ -1,6 +1,7 @@
 [user]
 	name = Peter Henry
 	email = me@peterhenry.net
+	signingkey = C2DF6E301C834F29
 [core]
 	eol = lf
 	autocrlf = input
@@ -17,3 +18,7 @@
 	ff = only
 [init]
 	defaultBranch = trunk
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
