@@ -106,6 +106,11 @@ alias sudo='sudo '
 # enable moving the mouse while using the keyboard
 alias fixmouse='xinput set-prop "AlpsPS/2 ALPS GlidePoint" 309 0'
 
+# start the GPG agent automatically
+# https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html
+export GPG_TTY=$(tty)
+gpgconf --launch gpg-agent
+
 # Lumin QOL functions
 alias tb="workon lumin && cd lumin-bot"
 alias tbg="workon lumin && cd lumin-bot && smerge ."
