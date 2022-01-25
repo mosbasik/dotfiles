@@ -143,6 +143,9 @@ macunlink () {
 # activate rbenv
 eval "$(rbenv init -)"
 
+# activate nvm
+source /usr/share/nvm/init-nvm.sh
+
 # set virtualenvwrapper's folder and activate it
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
