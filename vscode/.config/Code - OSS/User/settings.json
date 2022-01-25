@@ -25,9 +25,11 @@
     "files.autoSave": "onFocusChange",
 
     // Editor
+    "editor.bracketPairColorization.enabled": true,
     "editor.cursorBlinking": "phase",
     "editor.fontLigatures": true,
     "editor.formatOnType": true,
+    "editor.guides.bracketPairs": true,
     "editor.minimap.enabled": true,
     "editor.minimap.showSlider": "always",
     "editor.renderWhitespace": "none",
