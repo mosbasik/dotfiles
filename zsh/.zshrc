@@ -175,3 +175,20 @@ alias tern1='ternimal true_color=false height=100 width=$(tput cols) length=100 
 
 # List the foreign packages (basically, AUR packages)
 alias ua-list-foreign="pacman -Q --foreign"
+
+# Commands to update the system
+# Cribbed from the README of https://github.com/westandskif/rate-mirrors
+alias ua-drop-caches='sudo true && \
+	sudo paccache --remove --keep 3 && \
+	yay -S --clean --aur --noconfirm && \
+	notify-send "arch package caches cleaned up"'
+alias ua-update-mirrorlist='export TMPFILE="$(mktemp)" && \
+	sudo true && \
+	rate-mirrors --save=$TMPFILE arch --max-delay=21600 && \
+	sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist."$(date --iso-8601)" && \
+        sudo mv $TMPFILE /etc/pacman.d/mirrorlist && \
+	notify-send "arch mirrorlist reranked"'
+alias ua-update-packages='export TMPFILE="$(mktemp)" && \
+	sudo true && \
+	yay -S --refresh --refresh --sysupgrade && \
+	notify-send "arch system upgraded"'
