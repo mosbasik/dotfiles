@@ -1,0 +1,13 @@
+[Unit]
+Description=Geoclue demo agent
+#StartLimitBurst=5
+#StartLimitIntervalSec=10
+#Conflicts=fluidspaces.service
+
+[Service]
+#Restart=always
+#RestartSec=1
+ExecStart=/usr/lib/geoclue-2.0/demos/agent
+
+[Install]
+WantedBy=default.target
