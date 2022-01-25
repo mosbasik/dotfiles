@@ -3,6 +3,11 @@
 emulate sh -c 'source /etc/profile'
 
 
-if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+# From https://wiki.archlinux.org/index.php/Xinit#Autostart_X_at_login
+# If (no display is set) and (we're in TTY #1)
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+
+    # The `exec` causes you to log out when the X session ends
     exec startx
+
 fi
