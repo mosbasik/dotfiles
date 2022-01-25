@@ -120,6 +120,7 @@ alias tm="workon lumin && cd lumin-mettel-fci"
 alias tmg="workon lumin && cd lumin-mettel-fci && smerge . && git gui &"
 alias tn="workon lumin && cd lumin-nlp"
 alias tng="workon lumin && cd lumin-nlp && smerge . && git gui &"
+alias ldep="git rev-parse HEAD && git --no-pager tag --points-at HEAD && jq .default.default < .api.config"
 
 macpush () {
   LINUX_OUT='/home/phenry/lumin/lumin-bot/out-logic'
