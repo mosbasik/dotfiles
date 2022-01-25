@@ -29,7 +29,7 @@
     # the top and down respectively.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "300x5-30+20"
+    geometry = "0x0-30+20"
 
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = yes
@@ -72,7 +72,7 @@
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
     #  * anything else will be interpreted as a X color.
-    separator_color = frame
+    separator_color = auto
 
     # Sort messages by urgency.
     sort = yes
@@ -416,7 +416,29 @@
 [lumin-complete]
     appname = notify-send
     summary = "Tests complete"
-    background = "#FFFFFF" # white
+    #background = "#FFFFFF" # white
+    background = "#FFD700" # Gold
     foreground = "#008EFF" # Lumin blue
+    frame_color = "#008EFF" # Lumin blue
     new_icon = "/home/phenry/.config/dunst/lumin-logo.png"
 
+[slack]
+    body = "*slack*"
+    new_icon = "/home/phenry/.config/dunst/slack.png"
+
+[travis]
+    body = "*Build*of lumin-ai*"
+    new_icon = "/home/phenry/.config/dunst/travis.png"
+
+[travis-passed]
+    body = "*Build*of lumin-ai*passed*"
+    background = "#39AA56" # Travis Green
+
+[travis-failed]
+    body = "*Build*of lumin-ai*failed*"
+    background = "#DB4545;" # Travis Red
+
+[alerts-ops]
+    summary = "*#alerts-ops*"
+    background = "#AEAEAE7F"
+    new_icon = "/home/phenry/.config/dunst/link-fairy.png"
