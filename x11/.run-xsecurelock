@@ -1,0 +1,28 @@
+#!/bin/sh
+# .run-xsecurelock - run xsecurelock(1) with right config
+
+
+# If this script is run with the `lock` argument
+if [ "$1" = lock ]; then
+
+    # Delete all identities from the SSH agent
+    ssh-add -D
+
+    # Lock the device with the following config:
+    #   Fully blank the screen 15 min after xsecurelock starts OR the auth window closes
+    #   Configure the visual feedback that a key was pressed while entering password
+    #   Specify the desired screensaver module
+    #   Reset the screensaver when the auth window closes
+    #   Show local datetime on the login screen
+    XSECURELOCK_BLANK_TIMEOUT="900" \
+    XSECURELOCK_PASSWORD_PROMPT="time_hex" \
+    XSECURELOCK_SAVER="saver_xscreensaver" \
+    XSECURELOCK_SAVER_RESET_ON_AUTH_CLOSE="1" \
+    XSECURELOCK_SHOW_DATETIME="1" \
+        exec xsecurelock
+fi
+
+
+# Run this script with the `lock` argument after idling for 10 min OR after the
+# cursor has been in the northwest (nw) corner for 2 seconds
+xidle -program "${HOME}/.dotfiles/x11/.run-xsecurelock lock" -timeout 600 -nw

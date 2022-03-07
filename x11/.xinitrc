@@ -42,5 +42,8 @@ urxvtd --quiet --opendisplay &
 # start networkmanager tray applet
 nm-applet &
 
+# start script that locks screen after idle period
+"${HOME}/.dotfiles/x11/.run-xsecurelock" &
+
 # start i3 window manager
 exec i3

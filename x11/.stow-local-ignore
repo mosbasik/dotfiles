@@ -1,0 +1,36 @@
+# The following is excerpted from the "Ignore Files" section of `info stow`.
+# It's also available at
+# http://www.gnu.org/software/stow/manual/stow.html#Ignore-Lists
+#
+#
+# Stow first iterates through the chosen ignore list (built-in, global, or
+# package-local) as per above, stripping out comments (if you want to include
+# the ‘#’ symbol in a regular expression, escape it with a blackslash) and blank
+# lines, placing each regular expressions into one of two sets depending on
+# whether it contains the ‘/’ forward slash symbol.
+#
+# Then in order to determine whether a file or directory should be ignored:
+#
+#   1. Stow calculates its path relative to the top-level package directory,
+#      prefixing that with ‘/’. If any of the regular expressions containing a
+#      ‘/’ exactly match a subpath of this relative path, then the file or
+#      directory will be ignored.
+#
+#   2. If none of the regular expressions containing a ‘/’ match in the manner
+#      described above, Stow checks whether the basename of the file or
+#      directory matches exactly against the remaining regular expressions which
+#      do not contain a ‘/’, and if so, ignores the file or directory.
+#
+#   3. Otherwise, the file or directory is not ignored.
+#
+# For example, if a file bazqux is in the foo/bar subdirectory of the package
+# directory, Stow would use ‘/foo/bar/bazqux’ as the text for matching against
+# regular expressions which contain ‘/’, and ‘bazqux’ as the text for matching
+# against regular expressions which don’t contain ‘/’. Then regular expressions
+# ‘bazqux’, ‘baz.*’, ‘.*qux’, ‘bar/.*x’, and ‘^/foo/.*qux’ would all match
+# (causing the file to be ignored), whereas ‘bar’, ‘baz’, ‘qux’, and ‘o/bar/b’
+# would not (although ‘bar’ would cause its parent directory to be ignored and
+# prevent Stow from recursing into that anyway, in which case the file bazqux
+# would not even be considered for stowing).
+
+\.run-xsecurelock
