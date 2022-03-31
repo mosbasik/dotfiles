@@ -71,7 +71,6 @@
 
     // Window
     "window.menuBarVisibility": "toggle",
-    "window.zoomLevel": 0,
 
     // Misc
     "breadcrumbs.enabled": true,
@@ -107,4 +106,13 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "codesnap.showWindowControls": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb",
+        "git-rebase-todo": "gitlens.rebase"
+    },
+    "[python]": {
+
+        "editor.wordBasedSuggestions": false
+    },
+    "jupyter.interactiveWindowMode": "perFile",
 }
