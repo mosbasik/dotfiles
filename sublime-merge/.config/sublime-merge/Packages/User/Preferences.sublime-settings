@@ -2,7 +2,7 @@
     "editor_argument_format": "--goto ${file}:${line}:${col}",
     "editor_path": "code",
     "expand_merge_commits_by_default": false,
-    "font_face": "Monospace",
+    "font_face": "Fira Code",
     "font_size": 8,
     "hide_menu": false,
     "theme": "Merge.sublime-theme",
