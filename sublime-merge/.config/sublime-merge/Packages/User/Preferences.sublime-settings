@@ -5,7 +5,7 @@
     "font_face": "Monospace",
     "font_size": 8,
     "hide_menu": false,
-    "theme": "Merge Dark.sublime-theme",
+    "theme": "Merge.sublime-theme",
     "time_format": "24h",
     "render_commit_dialog_message_at_top": true,
     "side_bar_layout": "tabs",
