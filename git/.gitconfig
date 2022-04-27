@@ -8,6 +8,7 @@
 [push]
 	default = simple
 [merge]
+	conflictStyle = zdiff3
 	renormalize = true
 [diff]
 	tool = meld
