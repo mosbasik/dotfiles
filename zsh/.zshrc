@@ -112,6 +112,11 @@ alias fixmouse='xinput set-prop "AlpsPS/2 ALPS GlidePoint" 309 0'
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
 
+# Git QOL functions
+gft() {  # Fetch ONLY tags https://stackoverflow.com/a/20608181
+  git fetch $1 'refs/tags/*:refs/tags/*'
+}
+
 # Permit/forbid attaching debugger to unrelated, already-running process
 # Using a toggle cause it's unwise to leave running
 alias debugon="echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope"
