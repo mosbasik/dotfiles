@@ -7,6 +7,8 @@ Documentation=man:sxhkd(1)
 [Service]
 ExecStart=/usr/bin/sxhkd
 ExecReload=/usr/bin/kill -SIGUSR1 $MAINPID
+# means children are NOT managed by systemd, which is correct here
+KillMode=process
 
 [Install]
 WantedBy=graphical.target
