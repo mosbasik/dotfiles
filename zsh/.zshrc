@@ -112,6 +112,11 @@ alias fixmouse='xinput set-prop "AlpsPS/2 ALPS GlidePoint" 309 0'
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
 
+# Permit/forbid attaching debugger to unrelated, already-running process
+# Using a toggle cause it's unwise to leave running
+alias debugon="echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope"
+alias debugoff="echo 1 | sudo tee /proc/sys/kernel/yama/ptrace_scope"
+
 # Lumin QOL functions
 alias tb="workon lumin && cd lumin-bot"
 alias tbg="workon lumin && cd lumin-bot && smerge ."
