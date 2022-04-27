@@ -174,8 +174,8 @@ nplayer () (nc -kluw 1 127.0.0.1 5555 > /tmp/mpd.fifo & trap "kill $!" EXIT; ncm
 alias tern0='ternimal true_color=false height=100 width=$(tput cols) length=200 thickness=1,5,1,0 radius=20,24 gradient=0:#666600,0.5:#00ff00,1:#003300'
 alias tern1='ternimal true_color=false height=100 width=$(tput cols) length=100 thickness=1,8,16,0,0,0,1 radius=6,12 gradient=0:#FF6600,1:#0033EE,1:#FF3300'
 
-# List the foreign packages (basically, AUR packages)
-alias ua-list-foreign="pacman -Q --foreign"
+# List the AUR packages
+alias ua-list-aur="pacman -Q --foreign"
 
 # Commands to update the system
 # Cribbed from the README of https://github.com/westandskif/rate-mirrors
