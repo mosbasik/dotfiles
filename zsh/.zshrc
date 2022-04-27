@@ -193,3 +193,7 @@ alias ua-update-packages='export TMPFILE="$(mktemp)" && \
 	sudo true && \
 	yay -S --refresh --refresh --sysupgrade && \
 	notify-send "arch system upgraded"'
+alias ua-update-packages-sudoloop='export TMPFILE="$(mktemp)" && \
+	sudo true && \
+	yay -S --refresh --refresh --sysupgrade --sudoloop && \
+	notify-send "arch system upgraded"'
