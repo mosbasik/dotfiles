@@ -133,25 +133,33 @@ alt + shift + w ; s
 alt + n
     i3-input -F 'rename workspace to "%s"' -P 'New name for this workspace: '
 
-# go to workspace with name
+# prompt for workspace
+# if the workspace doesn't exist, create it
+# then switch to it
 alt + c
     fluidspaces-msg --action go_to
 alt + d ; alt + c
     ~/Dropbox/Development/fluidspaces-rs/target/debug/fluidspaces-msg --action go_to
 
-# send focused container to workspace with name
+# prompt for workspace
+# if the workspace doesn't exist, create it
+# send focused container to it
+# DON'T switch to it
 alt + shift + c
     fluidspaces-msg --action send_to
 alt + d ; alt + shift + c
     ~/Dropbox/Development/fluidspaces-rs/target/debug/fluidspaces-msg --action send_to
 
-# bring focused container to workspace with name
+# prompt for workspace
+# if the workspace doesn't exist, create it
+# send focused container to it
+# DO switch to it
 alt + ctrl + shift + c
     fluidspaces-msg --action bring_to
 alt + d ; alt + ctrl + shift + c
     ~/Dropbox/Development/fluidspaces-rs/target/debug/fluidspaces-msg --action bring_to
 
-# toggle to most recently used workspace
+# switch to most recently used inactive workspace on the same monitor
 alt + Tab
     fluidspaces-msg --action toggle
 alt + d ; alt + Tab
